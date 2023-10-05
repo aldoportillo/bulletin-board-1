@@ -65,14 +65,14 @@
       <th>Posted on</th>
       <th>Expires on</th>
     </tr>
-    <% @the_board.active_posts.each{ |post| %>
+    <% @the_board.posts.order(expires_on: :desc).active.each do |post| %>
     <tr>
       <th><%= post.title %></th>
       <th><%= post.body %></th>
       <th><%= post.created_at %></th>
       <th><%= post.expires_on %></th>
     </tr>
-    <%}%>
+    <% end %>
   </tbody>
 </table>
 
@@ -86,13 +86,13 @@
       <th>Posted on</th>
       <th>Expires on</th>
     </tr>
-    <% @the_board.expired_posts.each{ |post| %>
+    <% @the_board.posts.order(expires_on: :desc).expired.each do |post| %>
     <tr>
       <th><%= post.title %></th>
       <th><%= post.body %></th>
       <th><%= post.created_at %></th>
       <th><%= post.expires_on %></th>
     </tr>
-    <%}%>
+    <% end %>
   </tbody>
 </table>
