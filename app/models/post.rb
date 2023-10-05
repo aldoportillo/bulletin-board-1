@@ -11,4 +11,7 @@
 #  board_id   :integer
 #
 class Post < ApplicationRecord
+
+  scope(:active_posts, -> {where("expires_on < #{Date.today}")})
+  scope(:expired_posts, -> {where("expires_on > #{Date.today}")})
 end

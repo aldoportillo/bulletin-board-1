@@ -58,193 +58,41 @@
 <h2>Active posts</h2>
 
 <table border="1">
-  <tbody><tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th>Posted on</th>
-    <th>Expires on</th>
-  </tr>
-
+  <tbody>
     <tr>
-      <td>Central Manufacturing Developer</td>
-      <td>Culpo taedium absorbeo. Aegrus victoria autem. Aveho asporto tribuo.
-
-Theatrum qui sed. Beatae ancilla absque. Aestus uterque curia.
-
-Credo officiis ad. Reprehenderit textor supplanto. Solus crudelis ea.
-
-Angelus amiculum certus. Coerceo vulpes confido. Delectatio victoria aut.</td>
-      <td>Jul 30, 2023</td>
-      <td>Oct 10, 2023</td>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Posted on</th>
+      <th>Expires on</th>
     </tr>
+    <% @the_board.active_posts.each{ |post| %>
     <tr>
-      <td>Practical Leather Bench</td>
-      <td>Talis eligendi acies. Debilito coepi campana. Corpus aut ducimus.
-
-Ater comminor tabgo. Veritatis cruciamentum contra. Doloribus stultus ademptio.
-
-Convoco valetudo defungo. Unde magni pecco. Adstringo sed coruscus.</td>
-      <td>Aug  4, 2023</td>
-      <td>Oct 13, 2023</td>
+      <th><%= post.title %></th>
+      <th><%= post.body %></th>
+      <th><%= post.created_at %></th>
+      <th><%= post.expires_on %></th>
     </tr>
-    <tr>
-      <td>Dynamic Banking Orchestrator</td>
-      <td>Repudiandae varius cauda. Tredecim condico eius. Tego aufero omnis.
-
-Temeritas tristis valeo. Denuo voco minima. Summisse viscus tumultus.
-
-Auditor ciminatio in. Itaque quae vulpes. Asperiores minima deficio.</td>
-      <td>Sep 24, 2023</td>
-      <td>Oct 16, 2023</td>
-    </tr>
-    <tr>
-      <td>Global Facilitator</td>
-      <td>Coruscus thorax pax. Libero creptio timidus. Umbra asper animi.
-
-Spiculum terga est. Sono aut culpo. Accendo corpus volubilis.
-
-Vito armo verumtamen. Annus aestus explicabo. Nam cum nisi.</td>
-      <td>Aug 25, 2023</td>
-      <td>Oct 24, 2023</td>
-    </tr>
-    <tr>
-      <td>Durable Wool Bench</td>
-      <td>Certo territo contabesco. Claudeo cumque viscus. Depromo ut bene.
-
-Communis nemo aduro. Denuncio varius desino. Voluptate demitto arca.</td>
-      <td>Oct  1, 2023</td>
-      <td>Nov 15, 2023</td>
-    </tr>
-    <tr>
-      <td>Design Producer</td>
-      <td>Spiritus acsi vomica. Sublime et celebrer. Conitor aqua thermae.
-
-Sed coruscus adstringo. Congregatio triumphus solio. Quod soluta deporto.
-
-Autem numquam cui. Admoveo defigo texo. Vereor testimonium quos.</td>
-      <td>Sep 19, 2023</td>
-      <td>Dec 12, 2023</td>
-    </tr>
-</tbody></table>
+    <%}%>
+  </tbody>
+</table>
 
 <h2>Expired posts</h2>
 
 <table border="1">
-  <tbody><tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th>Posted on</th>
-    <th>Expired on</th>
-  </tr>
-
+  <tbody>
     <tr>
-      <td>Sales Designer</td>
-      <td>Tribuo vita custodia. Debilito et subvenio. Tendo patior tres.
-
-Curvo campana angustus. Stipes comptus charisma. Cruentus adsidue vobis.
-
-Basium cetera abutor. Spiculum eos cilicium. Et abbas vero.</td>
-      <td>Aug  5, 2023</td>
-      <td>Oct  4, 2023</td>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Posted on</th>
+      <th>Expires on</th>
     </tr>
+    <% @the_board.expired_posts.each{ |post| %>
     <tr>
-      <td>Fantastic Copper Table</td>
-      <td>Earum qui amplus. Decretum voluptate decerno. Utpote iusto aeger.
-
-Quia adaugeo teres. Volva cotidie thema. Acervus spoliatio supplanto.</td>
-      <td>Aug 28, 2023</td>
-      <td>Sep 19, 2023</td>
+      <th><%= post.title %></th>
+      <th><%= post.body %></th>
+      <th><%= post.created_at %></th>
+      <th><%= post.expires_on %></th>
     </tr>
-    <tr>
-      <td>Aerodynamic Aluminum Hat</td>
-      <td>Ad tardus solio. Aut confido culpa. Aurum cubitum suppono.
-
-Verto votum venio. Pariatur undique auctor. Vapulus supra autem.</td>
-      <td>Sep  5, 2023</td>
-      <td>Sep 18, 2023</td>
-    </tr>
-    <tr>
-      <td>Aerodynamic Wool Chair</td>
-      <td>Aranea civitas audio. Deorsum voco aufero. Tum defessus nesciunt.
-
-Arma veritatis civitas. Corroboro suscipio acceptus. Terreo denique crudelis.
-
-Voveo beatus autem. Velit summisse atrox. Quo sodalitas triumphus.</td>
-      <td>Jul  2, 2023</td>
-      <td>Sep 16, 2023</td>
-    </tr>
-    <tr>
-      <td>Retail Representative</td>
-      <td>Cilicium cumque strues. Est maxime abduco. Acquiro spectaculum suppono.
-
-Audax quos auxilium. Casso substantia utilis. Cur ventosus ea.
-
-Color tactus patior. Antea vacuus deprecator. Certe aperiam arbustum.</td>
-      <td>Jun 23, 2023</td>
-      <td>Sep 15, 2023</td>
-    </tr>
-    <tr>
-      <td>Design Manager</td>
-      <td>Sunt ipsam veniam. Voluptatum bardus pauper. Vulgivagus aequitas certus.
-
-Numquam tamisium sollers. Audax bardus careo. Viduo terminatio porro.</td>
-      <td>Aug 24, 2023</td>
-      <td>Sep 11, 2023</td>
-    </tr>
-    <tr>
-      <td>Customer Coordinator</td>
-      <td>Supplanto trado theatrum. Conservo non id. Ullam aperiam sumo.</td>
-      <td>Jul 28, 2023</td>
-      <td>Sep 11, 2023</td>
-    </tr>
-    <tr>
-      <td>Mediocre Paper Shoes</td>
-      <td>Acies triginta stultus. Vester vulpes viduo. Sophismata nemo desipio.
-
-Timidus curto saepe. Creber convoco conduco. Paens territo demulceo.</td>
-      <td>Sep  2, 2023</td>
-      <td>Sep  9, 2023</td>
-    </tr>
-    <tr>
-      <td>Durable Leather Table</td>
-      <td>Dicta caput compello. Architecto nisi decens. Campana correptius callide.
-
-Tripudio terror vulticulus. Optio tollo tergum. Aegre omnis custodia.</td>
-      <td>Jul 24, 2023</td>
-      <td>Aug 31, 2023</td>
-    </tr>
-    <tr>
-      <td>Healthcare Assistant</td>
-      <td>Theca adulescens ambulo. Ut cohaero aperio. Varietas et modi.
-
-Conqueror aestivus voco. Supplanto caterva tam. Deludo quasi suffoco.
-
-Tolero calco crudelis. Una vulgus corrupti. Approbo tristis alo.
-
-Clibanus avarus soluta. Tardus nemo conor. Cunctatio calamitas patruus.</td>
-      <td>Jun 16, 2023</td>
-      <td>Aug 29, 2023</td>
-    </tr>
-    <tr>
-      <td>IT Director</td>
-      <td>Vero conturbo ager. Caritas tamisium sequi. Aiunt vester vulgivagus.
-
-Ea umerus claudeo. Aut curto abduco. Tot despecto nostrum.</td>
-      <td>Jul  4, 2023</td>
-      <td>Aug 25, 2023</td>
-    </tr>
-    <tr>
-      <td>Marketing Liaison</td>
-      <td>Celebrer viscus facere. Surculus omnis debitis. Itaque textilis debilito.
-
-Artificiose summa spero. Blandior strues coniecto. Inventore trado complectus.
-
-Aliquam cetera tepesco. Astrum excepturi amo. Iste quae tabula.
-
-Necessitatibus color numquam. Decet ambulo adhaero. Nesciunt tabgo auris.</td>
-      <td>Jun 11, 2023</td>
-      <td>Aug  1, 2023</td>
-    </tr>
-</tbody></table>
-
-<hr>
+    <%}%>
+  </tbody>
+</table>
