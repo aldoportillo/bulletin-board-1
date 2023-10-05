@@ -12,6 +12,8 @@
 #
 class Post < ApplicationRecord
 
+  validates(:body, presence: true)
+
   scope(:active, -> { where("expires_on > :date", date: Time.now) })
   scope(:expired, -> { where("expires_on < :date", date: Time.now) })
 end
