@@ -12,6 +12,6 @@
 #
 class Post < ApplicationRecord
 
-  scope(:active_posts, -> {where("expires_on < #{Date.today}")})
-  scope(:expired_posts, -> {where("expires_on > #{Date.today}")})
+  scope(:active, -> { where("expires_on > :date", date: Time.now) })
+  scope(:expired, -> { where("expires_on < :date", date: Time.now) })
 end
